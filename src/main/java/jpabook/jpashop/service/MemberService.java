@@ -1,11 +1,9 @@
-package jpabook.jpashop.domain.service;
+package jpabook.jpashop.service;
 
 
 import jpabook.jpashop.domain.Member;
-import jpabook.jpashop.domain.repository.MemberRepository;
-import lombok.AllArgsConstructor;
+import jpabook.jpashop.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -19,8 +17,6 @@ public class MemberService {
     private final MemberRepository memberRepository;
 
 //spring 에서 생성자 하나만 있을경우 자동으로 DI 해줌.
-
-
 
 
     //회원 가입
